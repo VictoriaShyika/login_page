@@ -7,9 +7,9 @@ const config = {
   },
   webpack: (config) => {
     // Fixes npm packages that depend on `fs` module
-    config.node = {
-      fs: 'empty',
-    };
+    // config.node = {
+    //   fs: 'empty',
+    // };
 
     config.module.rules = [
       ...config.module.rules,
@@ -19,11 +19,11 @@ const config = {
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url-loader?limit=10000&mimetype=application/font-woff',
+        // loader: 'url-loader?limit=10000&mimetype=application/font-woff',
       },
       {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'file-loader',
+        // loader: 'file-loader',
       },
     ];
 

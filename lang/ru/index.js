@@ -2,7 +2,7 @@ import META from './meta.json';
 import VALIDATION from './validation.json';
 import ERROR from './error.json';
 import STATIC from './static.json';
-import SIGNUP from './signup.json';
+import LOGIN from './login.json';
 
 export const RU = {
   translation: {
@@ -10,6 +10,6 @@ export const RU = {
     VALIDATION,
     ERROR,
     STATIC,
-    SIGNUP,
+    LOGIN,
   },
 };

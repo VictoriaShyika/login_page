@@ -462,9 +462,15 @@ html {
   min-height: 100vh;
   height: auto;
 }
+
+@font-face {
+  font-family: 'PT Root UI';
+  src: url('../fonts/PT_Root_UI_Regular.ttf') format('truetype');
+ }
+
 * {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'PT Root UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'PT Root UI', 'Fira Sans', 'Droid Sans', sans-serif;
   letter-spacing: 0.01em;
 }
 .default.text,
@@ -496,7 +502,7 @@ body {
 }
 body,
 * {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'PT Root UI', sans-serif;
 }
 
 img {

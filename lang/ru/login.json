@@ -1,0 +1,14 @@
+{
+    "LOGIN_FORM": {
+        "FIELD": {
+            "LOGIN": {
+                "TITLE": "Ел. адреса",
+                "PLACEHOLDER": "Email"
+            },
+            "PASSWORD": {
+                "TITLE": "Пароль",
+                "PLACEHOLDER": "Password"
+            }
+        }
+    }
+}

@@ -13,7 +13,8 @@ export const THEME_SIZE = {
     DEFAULT: '1200px',
   },
   FONT: {
-    DEFAULT: '16px',
-    SMALL: '14px',
+    SMALL: '12px',
+    MEDIUM: '14px',
+    LARGE: '24px'
   },
 };
