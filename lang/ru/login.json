@@ -1,5 +1,8 @@
 {
     "LOGIN_FORM": {
+        "TITLE": {
+            "PAGE_TITLE": "Вхід"
+        },
         "FIELD": {
             "LOGIN": {
                 "TITLE": "Ел. адреса",
@@ -9,6 +12,12 @@
                 "TITLE": "Пароль",
                 "PLACEHOLDER": "Password"
             }
+        },
+        "LOGIN_BUTTON": "Увійти",
+        "RESET": {
+            "RESET_TEXT": "Забули пароль?",
+            "RESET_LINK": "Відновити"
         }
+    
     }
 }

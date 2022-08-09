@@ -29,6 +29,11 @@ export function LoginFormContainer(props) {
       >
         {(formProps) => (
           <LoginFormComponent
+            pageTitleTid="LOGIN.LOGIN_FORM.TITLE.PAGE_TITLE"
+            buttonTitleTid="LOGIN.LOGIN_FORM.LOGIN_BUTTON"
+            resetTextTid="LOGIN.LOGIN_FORM.RESET.RESET_TEXT"
+            resetLinkTid="LOGIN.LOGIN_FORM.RESET.RESET_LINK"
+
             fieldLogin={LOGIN_NAME}
             fieldPassword={PASSWORD_NAME}
             {...formProps}

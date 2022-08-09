@@ -6,9 +6,10 @@ import { ServerError } from '../../../../lib/elements/server-error';
 
 import { THEME_SIZE } from '../../../../lib/theme';
 
-import {IoMdAlert} from "react-icons/io";
+import { IoMdAlert } from 'react-icons/io';
 
 import styled from 'styled-components';
+import { text } from '../../../../lib/common/text';
 
 export function LoginFormComponent(props) {
   const {
@@ -22,12 +23,16 @@ export function LoginFormComponent(props) {
     handleBlur,
     handleSubmit,
 
+    pageTitleTid,
+    buttonTitleTid,
+    resetTextTid,
+    resetLinkTid,
+
     isPending,
     isSuccess,
     isError,
     errorMessage,
-
-    } = props;
+  } = props;
 
   const isFieldError = (name) => {
     return errors[name] && touched[name] && errors[name];
@@ -42,7 +47,7 @@ export function LoginFormComponent(props) {
   return (
     <form onSubmit={handleSubmit}>
       <Container>
-        <PageTitle>Вхід</PageTitle>
+        <PageTitle>{text(pageTitleTid)}</PageTitle>
         <FieldLayout>
           <FieldPrimary
             titleTid="LOGIN.LOGIN_FORM.FIELD.LOGIN.TITLE"
@@ -65,13 +70,20 @@ export function LoginFormComponent(props) {
           />
 
           <Button type="submit" disabled={isSubmitDisabled()}>
-            Увійти
+            {text(buttonTitleTid)}
           </Button>
-          {isError && <ServerError> <Icon><IoMdAlert /></Icon> {errorMessage || "Користувача не знайдено"}</ServerError>}
+          {isError && (
+            <ServerError>
+              <Icon>
+                <IoMdAlert />
+              </Icon>
+              {errorMessage || 'Користувача не знайдено'}
+            </ServerError>
+          )}
         </FieldLayout>
 
         <Reset>
-          Забули пароль? <Link>Відновити</Link>
+          {text(resetTextTid)} <Link>{text(resetLinkTid)}</Link>
         </Reset>
       </Container>
     </form>
@@ -101,7 +113,7 @@ const Link = styled.a`
 `;
 
 const Icon = styled.span`
-position: relative;
-top: 2px;
-padding-right: 8px`
-
+  position: relative;
+  top: 2px;
+  padding-right: 8px;
+`;
